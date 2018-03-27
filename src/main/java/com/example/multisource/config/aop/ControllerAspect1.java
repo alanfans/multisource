@@ -6,9 +6,9 @@ import org.aspectj.lang.annotation.*;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
-@Aspect
+/*@Aspect
 @Component
-@Order(10)
+@Order(10)*/
 public class ControllerAspect1 {
 
     @Around("execution(* com.example.multisource.controller..*.*(..))")

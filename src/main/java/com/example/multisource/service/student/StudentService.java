@@ -17,7 +17,7 @@ public interface StudentService {
 
     void updateThree(int age);
 
-    StudentEntity   getOne();
+    StudentEntity   getOne(int age);
 
     StudentEntity   getTwo();
 

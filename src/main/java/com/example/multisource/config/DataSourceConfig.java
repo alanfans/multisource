@@ -12,11 +12,13 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.jta.atomikos.AtomikosDataSourceBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.transaction.interceptor.TransactionInterceptor;
 
 import javax.sql.DataSource;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
+import java.util.stream.IntStream;
 
 @Configuration
 @MapperScan(basePackages ="com.example.multisource.neo.mapper",sqlSessionTemplateRef ="SqlSessionTemplate")
@@ -167,11 +169,12 @@ public class DataSourceConfig {
         sqlSessionTemplate.setTargetSqlSessionFactorys(sqlSessionFactoryMap);
         return sqlSessionTemplate;
     }
-
     /*@Bean("SqlSessionTemplate")
     public SqlSessionTemplate sqlSessionTemplate() throws Exception {
         SqlSessionTemplate template = new SqlSessionTemplate(sqlSessionFactory().getObject()); // 使用上面配置的Factory
         return template;
     }*/
-
+    //TransactionInterceptor
+    //TransactionInterceptor
+    //IntStream
 }

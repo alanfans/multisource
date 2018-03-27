@@ -2,7 +2,12 @@ package com.example.multisource.neo.entity;
 
 import java.io.Serializable;
 
+
 public class StudentEntity implements Serializable{
+
+
+    private static final long serialVersionUID = 3041550937549380686L;
+
     private String id;
 
     private String name;
@@ -53,4 +58,6 @@ public class StudentEntity implements Serializable{
     public void setClassName(String className) {
         this.className = className;
     }
+
+
 }

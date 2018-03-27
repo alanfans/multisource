@@ -18,7 +18,7 @@ public class SpringScheduled {
     private static final SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
 
 
-    @Async
+    /*@Async
     @Scheduled(cron="0 0/2 * * * ?")
     public void scheduled1()
     {
@@ -32,5 +32,5 @@ public class SpringScheduled {
     {
         System.out.println(Thread.currentThread().getName()+":"+sdf.format(new Date()));
         studentService.update(18);
-    }
+    }*/
 }

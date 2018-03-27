@@ -6,12 +6,12 @@ import org.aspectj.lang.annotation.*;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
-@Aspect
+/*@Aspect
 @Component
-@Order(11)
+@Order(11)*/
 public class ControllerAspect2 {
 
-    @Before("execution(* com.example.multisource.controller..*.*(..))")
+   @Before("execution(* com.example.multisource.controller..*.*(..))")
     public void before(JoinPoint point)
     {
         System.out.println("before2");
